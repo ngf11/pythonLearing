@@ -170,3 +170,22 @@ info = {
     'city':  input("What is your city?")
 }
 print(info)
+
+#this is my first python comment  
+from distutils.command.build_scripts import first_line_re
+
+
+print("Hello Friends")
+
+#string 
+name = "Nico"
+serenity ="God, grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference."
+print(name)
+print(serenity)
+#check type
+print(type(name))
+#combining variables 
+first_name = "NIcolas"
+last_name = "Funtes"
+full_name = first_name + " " + last_name
+print(full_name)
