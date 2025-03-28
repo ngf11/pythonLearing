@@ -175,4 +175,56 @@ b = float(input("enter side b:"))
 hype =math.sqrt(pow(a,2) + pow(b, 2))
 
 print(f"the Hype  is {hype}")
-'''
+
+## IF statments do some code IF a condion is TURE
+# Else do something ElSE
+#  
+
+age = int(input("What is your age?: "))
+if age >= 100:
+    print("How are you still here!")
+elif age >= 18:
+    print("You are now and adult")
+elif age < 0:
+    print("Wher you born yet")
+else: 
+    print("You are still a Kid")
+response = input("Would you like food?: (Y/N)")
+
+if response == "Y":
+    print("Okay good")
+else:
+    print("No food for you")
+name = input("What is your name?: ")
+
+if name == "":
+    print("You didn't enter your name")
+else:
+    print(f"Hello, {name}")
+for_sale = False
+
+if for_sale:
+    print("This item is for sale")
+else:
+    print("Not for sale")
+    '''
+#calculator 
+
+operator = input("Choose an operator? (add = + | sub = - | muiltipcation = * | devision = / : ")
+num1 = float(input("write your frist number: "))
+num2 = float(input("write your second number: "))
+
+if operator == "+":
+    result = num1 + num2
+    print(f"Total is: {round(result, 3)}")
+elif operator == "-":
+     result = num1 - num2
+     print(f"Total is: {round(result, 3)}")
+elif operator == "*":
+     result = num1 * num2
+     print(f"Total is: {round(result, 3)}")
+elif operator == "/":
+    result = num1 / num2
+    print(f"Total is: {round(result, 3)}")
+else:
+    print(f"{operator} is not valid")
