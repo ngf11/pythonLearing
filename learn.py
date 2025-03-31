@@ -207,7 +207,6 @@ if for_sale:
     print("This item is for sale")
 else:
     print("Not for sale")
-    '''
 #calculator 
 
 operator = input("Choose an operator? (add = + | sub = - | muiltipcation = * | devision = / : ")
@@ -228,3 +227,34 @@ elif operator == "/":
     print(f"Total is: {round(result, 3)}")
 else:
     print(f"{operator} is not valid")
+    
+weight = float(input("Enter your weight?: "))
+unit = input("Kgs or Lbs: ")
+
+if unit == "Kgs":
+    result = print(f"Your weight in lbs is {round(weight * 2.20462, 2 )}")
+elif unit == "Lbs":
+    result = print(f"Your weight in Kgs is {round(weight / 2.20462, 2 )}")
+else:
+    print("Your enter the wrong info")
+# Logical Operators: it evaluates multiple operations(or, AND, NOT)
+#           or = If one of the conditions is met
+#           and = If both Contions is met
+#           not =  it inverts the condiont (Not false = True, Not true = False)
+
+
+#conditional expressions: Are a one line short cut for the if-else statments(terany operators)
+#                   Print or assing one value based on the condition 
+#               return X if conditon is true else Y
+
+#positive
+num = 5 
+
+print("Good" if num > 0 else "notgood")
+#even or odd
+num = 7
+a =6
+b =7
+print( "Even" if num % 2 == 0 else "odd"   )
+1:27
+'''
