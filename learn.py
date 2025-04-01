@@ -257,4 +257,60 @@ a =6
 b =7
 print( "Even" if num % 2 == 0 else "odd"   )
 1:27
+# Sting methos 
+from cgitb import reset
+from gettext import find
+from unittest import result
+
+
+name = input("What is your name?: ")
+
+#result = len(name) length
+#result = find(" ") first ocrrens 
+#result = name.rfind("s") last occrans
+# result = name.rfind("q")
+# name = name.capitalize()
+# name = name.upper()
+# name = name.lower()
+# name= name.isdigit() this will return true or false is its an intiger
+# name = name.isalpha() this will return true or false if it is alphabetical excluding spaces if it has a space it will return false
+print(name)
+# print(result)
+
+from cgitb import reset
+from unittest import result
+
+
+phone_number = input("What is your phone number?: ")
+# result = phone_number.count("-")
+result = phone_number.replace("-", " ")
+print(result)
+# if you need any help finding all the methods for stings use this 
+print(help(str))
+username = input("enter a username: ")
+
+if len(username) > 12 :
+    print("Your name can not be more then 12 charcater")
+elif not  username.find(" ") == -1:
+    print("User name can not have a Space")
+elif  not username.isalpha():
+    print("Username can not have numbers")
+else:
+    print(f"valid username: {username}")
+# Sting indexing = accessing elements of squence using [] (indexing operator)
+#                  [start: end : step] [inclusiv : exclusiv : ]
+
+from os import access
+
+
+credit_card_number = "1234-4567-1234-8900"
+# print(credit_card_number[0]) first index
+# print(credit_card_number[0 : 4])
+# print(credit_card_number[-1])
+# print(credit_card_number[::2]) steps allows you access the charcters of a sting by a giving step. is case every two charchters
+last_four = credit_card_number[-4:19]
+print(last_four)
+print(f"XXXX-XXXX-XXXX-{credit_card_number[-4: ]}")
+print(credit_card_number[:: -1]) reverses string
+1:46:36
 '''
